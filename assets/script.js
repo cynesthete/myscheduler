@@ -1,6 +1,7 @@
 moment().format('MMMM Do YYYY');
 moment().hours(); // Number
 
+// local storage saved via click event
 $(document).ready(function(){
 $("#currentDay").text(moment().format('MMMM Do YYYY'));
 $(".saveBtn").on("click", function(){
@@ -20,6 +21,8 @@ $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
 
+//change color
+//add class future, remove class present, remove class past
 function changeColor() {
     var currentHour = moment().hours();
     console.log(currentHour);
@@ -31,10 +34,11 @@ function changeColor() {
             $(this).addClass("present");
             $(this).removeClass("past");
         } else {
-            //add class future, remove class present, remove class past
-
+            $(this).addClass("future");
+            $(this).removeClass("present");
+            $(this).removeClass("past");
         }
-    })
+    });
 }
 var interval = setInterval(changeColor, 1000);
 });
