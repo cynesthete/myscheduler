@@ -33,7 +33,7 @@ function changeColor() {
         } else if (blockHour === currentHour) {
             $(this).addClass("present");
             $(this).removeClass("past");
-        } else {
+        } else if (blockHour > currentHour) {
             $(this).addClass("future");
             $(this).removeClass("present");
             $(this).removeClass("past");
