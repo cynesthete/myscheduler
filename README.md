@@ -4,7 +4,7 @@ This scheduler was designed to save the tasks one deems essential on the current
 
 ![Screenshot of application](assets/myscheduler_ss.png)
 
-[Javascript Fundamentals Quiz](https://cynesthete.github.io/myscheduler/) is hosted on GitHub pages.
+[My Scheduler](https://cynesthete.github.io/myscheduler/) is hosted on GitHub pages.
 
 This application was authored by [Tony Rivas](https://cynesthete.github.io).
 
